@@ -24,7 +24,7 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{}],"m1VE":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;const e={BASE_URL:"https://api.themoviedb.org/3/",API_KEY:"b92378d38e08a011f12d0395062a656e",IMG_URL:"https://image.tmdb.org/t/p/w500/"};var t=e;exports.default=t;
 },{}],"uJ6k":[function(require,module,exports) {
-module.exports="/team-project-filmoteka/noImageAvailable.0102bcca.jpg";
+module.exports="/filmoteka/noImageAvailable.0102bcca.jpg";
 },{}],"l0f6":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.normalizationMovieObj=exports.getImgPath=void 0;var e=r(require("./genreList")),t=r(require("./settings")),a=r(require("../../images/noImageAvailable.jpg"));function r(e){return e&&e.__esModule?e:{default:e}}const{API_KEY:o,IMG_URL:i}=t.default,l=t=>t.map(t=>e.default[`${t}`]),s=e=>e.map(e=>e.name),n=e=>e?`${i}${e}`:`${a.default}`;exports.getImgPath=n;const u=e=>e?e.slice(0,4):data,g=({genres:e=null,genre_ids:t=null,id:a,original_title:r,overview:o,popularity:i,poster_path:g,release_date:p,vote_average:d,vote_count:v})=>({genre:t?l(t):s(e),id:a,title:r,about:o,popularity:i,img:n(g),releaseDate:p?u(p):"",vote:d,votes:v});exports.normalizationMovieObj=g;
 },{"./genreList":"OM4J","./settings":"m1VE","../../images/noImageAvailable.jpg":"uJ6k"}],"Kw9T":[function(require,module,exports) {
@@ -63,4 +63,4 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"canvas-confetti":"YvuL"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/home"),require("./js/components/search-by-query"),require("./js/components/watched"),require("./js/components/togglePages"),require("./js/components/film-description-modal"),require("./js/components/trailer"),require("./js/components/films-container"),require("./js/components/modal-footer-friends"),require("./js/components/queue");
 },{"./sass/main.scss":"clu1","./js/components/home":"wBjs","./js/components/search-by-query":"br7D","./js/components/watched":"p6KI","./js/components/togglePages":"UEnv","./js/components/film-description-modal":"Visa","./js/components/trailer":"rsXv","./js/components/films-container":"etSi","./js/components/modal-footer-friends":"mc4c","./js/components/queue":"gSLu"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-filmoteka/src.14e30276.js.map
+//# sourceMappingURL=/filmoteka/src.934ef41c.js.map
